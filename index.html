@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tharuniga</title>
+    <meta name="keywords" content="Tharuniga, portfolio, web developer, front-end developer, full-stack developer, UI designer, software engineer, personal website, projects, HTML, CSS, JavaScript, React, Python, resume, digital portfolio" />
+
+    <meta name="description" content="This is a personal portfolio " />
+
+    <!-- icon link -->
+    <link rel="icon" href="./img/webicon.png" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/font/font.css" />
+
+    <!-- Custom Css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- preloaded image -->
+    <link rel="stylesheet" as="image" href="./assets/images/hero-banner.jpg" />
+    <link rel="stylesheet" as="image" href="./assets/images/hero-shape-1.png" />
+    <link rel="stylesheet" as="image" href="./assets/images/hero-shape-2.png" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Particle.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+    <style>
+      .animated-quote {
+        font-size: 5rem;
+        text-align: center;
+        color: #010101;
+        font-weight: bold;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid #fff;
+        animation: typing 3.5s steps(40, end),
+                   blink-caret .75s step-end infinite;
+        margin: 0 auto;
+        letter-spacing: 2px;
+      }
+
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #000000 }
+      }
+
+      @media (max-width: 768px) {
+        .animated-quote {
+          font-size: 2.5rem;
+        }
+      }
+
+      .tech-image-container {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background: #1a1a1a;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px 0;
+      }
+
+      .tech-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+      }
+
+      .tech-image:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body id="top">
+    <!-- Background elements -->
+    <div class="bg-gradient"></div>
+    <div id="particles-js"></div>
+
+    <!-- preloaded -->
+    <div class="preloader" data-preloader>
+      <span class="line"> </span>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <h1 class="tit">Tharuniga</h1>
+        </a>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <h1 class="tit">Tharuniga</h1>
+            </a>
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+            <li>
+              <a href="#Services" class="navbar-link" data-nav-link>Services</a>
+            </li>
+            <li>
+              <a href="#About" class="navbar-link" data-nav-link>About</a>
+            </li>
+            <li>
+              <a href="#Project" class="navbar-link" data-nav-link>Project</a>
+            </li>
+            <li>
+              <a href="#Contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#Contact" class="btn btn:hover">
+          <span class="span">Contact us</span>
+          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button
+          class="nav-open-btn btn:hover"
+          aria-label="open menu"
+          data-nav-toggler
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
+
+        <div class="overlay" data-overlay data-nav-toggler></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- HERO SECTION -->
+        <div class="hero text-center" id="home" style="margin-top: 30px">
+          <div class="cotainer">
+            <div class="banner-outline has-after">
+              <div
+                class="hero-banner img-holder has-after"
+                style="--width: 500; --height: 680"
+                data-tilt
+              >
+                <img
+                  src="./img/tharuniga.png"
+                  width="500"
+                  height="680"
+                  alt="Tilak"
+                  class="img-cover"
+                  id="imag"
+                />
+                
+              </div>
+
+              
+            </div>
+
+            <div class="hero-content">
+              <h2 class="h1 title typing-loop" id="typing-text"> I'm a Passionate Software Developer</h2>
+
+              <div class="wrapper">
+                <a href="./pdf/tharuniga.pdf" class="btn btn:hover" download>
+                  <span class="span">Download CV</span>
+                  <ion-icon
+                    name="cloud-download-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <img
+            src="./assets/images/hero-shape-1.png"
+            width="350"
+            height="279"
+            alt=""
+            class="shape shape-1"
+          />
+
+          <img
+            src="./assets/images/hero-shape-2.png"
+            width="113"
+            height="113"
+            alt=""
+            class="shape shape-2"
+          /> -->
+        </div>
+      </article>
+    </main>
+
+    <!-- JavaScript for existing functionality -->
+  
+        <!-- HERO SECTION -->
+
+        <!-- SERVICE SECTION -->
+
+        <section
+          class="service text-center"
+          aria-label="my services"
+          id="Services"
+        >
+          <div class="container">
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/aii.png"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="service-icon"
+                    />
+                  </div>
+                  <h3 class="card-title">
+                    <a href="#"
+                      >AI <br />
+                      Development</a
+                    >
+                  </h3>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/gen.png"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="service-icon"
+                    />
+                  </div>
+                  <h3 class="card-title">
+                    <a href="#"
+                      >Gen AI<br />
+                      </a
+                    >
+                  </h3>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/frontend.png"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="service-icon"
+                    />
+                  </div>
+                  <h3 class="card-title">
+                    <a href="#"
+                      >Frontend <br />
+                      Developer</a
+                    >
+                  </h3>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/datascience.png"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="service-icon"
+                    />
+                  </div>
+                  <h3 class="card-title">
+                    <a href="#"
+                      >Data <br />
+                      Science</a
+                    >
+                  </h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- SERVICE SECTION -->
+
+        <!-- ABOUT SECTION -->
+
+        <section class="section about" aria-label="about-me" id="About">
+          <div class="container">
+            <div class="tab-container">
+              <ul class="tab-btn-list">
+                <li class="tab-btn-item">
+                  <button class="tab-btn title h6 active" data-tab-btn="about">
+                    About Me
+                  </button>
+                </li>
+
+                <li class="tab-btn-item">
+                  <button
+                    class="tab-btn title h6"
+                    data-tab-btn="skillset"
+                  >
+                    Skillset
+                  </button>
+                </li>
+
+                <li class="tab-btn-item">
+                  <button
+                    class="tab-btn title h6"
+                    data-tab-btn="interview"
+                  >
+                    Education
+                  </button>
+                </li>
+
+                <li class="tab-btn-item">
+                  <button class="tab-btn title h6" data-tab-btn="Award">
+                    Certificate
+                  </button>
+                </li>
+
+                <li class="tab-btn-item">
+                  <button
+                    class="tab-btn title h6"
+                    data-tab-btn="Exhibition"
+                  >
+                    Hobbies
+                  </button>
+                </li>
+              </ul>
+
+              <!-- ABOUT -->
+              <div class="tab-content" data-tab-content="about" style="display: block;">
+                <div class="grid-list">
+                  <figure
+                    class="about-banner img-holder"
+                    style="--width: ; --height: "
+                    data-tilt
+                  >
+                    <img
+                      src="./assets/images/girl.png"
+                      class="img-cover"
+                      width="570"
+                      height="420"
+                      loading="lazy"
+                      alt="About-banner"
+                    />
+                  </figure>
+
+                  <div class="about-container">
+                    <h2 class="h4 title section-title">
+                      I am Ai Developer & Data Science !
+                    </h2>
+                    <p class="section-text">
+                     To build a powerful and progressive career in a cutting-edge 
+                     organization where I can unleash my full potential, sharpen my skills,
+                      and drive meaningful impact through innovation, dedication, and smart work 
+                      — growing with the organization while contributing to its success
+                    </p>
+
+                    <ul class="about-list">
+                      <li class="about-item">
+                        <p class="list-title">Name</p>
+                        <span class="span title h5">THARUNIGA .G </span>
+                      </li>
+
+                      <li class="about-item">
+                        <p class="list-title">Phone Number</p>
+                        <span class="span title h5">+91 99408 05985 </span>
+                      </li>
+
+                      <li class="about-item">
+                        <p class="list-title">Email Address</p>
+                        <span class="span title h5">tharunigatharuniga@gmail.com </span>
+                      </li>
+
+                      <li class="about-item">
+                        <p class="list-title">Social Network</p>
+                        <div class="social-list">
+                        <a
+  href="https://api.whatsapp.com/send/?phone=919940805985&text=Hi%20bro%2C%20I%27m%20interested%20in%20your%20services&type=phone_number&app_absent=0"
+  target="_blank"
+  class="social-link h6"
+  title="WhatsApp"
+>
+  <img class="imgs" src="./assets/images/whatsapp.png" alt="">
+</a>
+                          <a
+                            href="https://www.instagram.com/_.tharunigaa.__/?igsh=MWxyc3ltM2w0N3hnZA%3D%3D&utm_source=ig_contact_invite#"
+                            class="social-link h6"
+                            title="Instagram"
+                            ><img class="imgs" src="./assets/images/insta.png" alt=""></a
+                          >
+                          <a
+                            href="https://www.linkedin.com/in/tharuniga-g-87548633b/"
+                            class="social-link h6"
+                            title="LinkedIn"
+                            ><img class="imgs" src="./assets/images/linkedin.png" alt=""></a
+                          >
+                          <a
+                            href="https://github.com/28-tharunigaa"
+                            class="social-link h6"
+                            title="Github"
+                            ><img class="imgs" src="./assets/images/git.png" alt=""></a
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- ABOUT -->
+
+              <!-- SKILL AREA -->
+              <div class="tab-content" data-tab-content="skillset" style="display: none;">
+                <div class="grid-list">
+                  <div class="skill-content">
+                    <h3 class="h4 title section-title">Hii Friends...</h3>
+                    <p class="section-text">
+                  To pursue a challenging role in a forward-thinking organization where I can continuously learn,
+                   grow, and apply my skills to drive innovation and contribute to organizational success
+                    </p>
+
+                    <ul class="skill-list">
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">Machine learning</span>
+                          <span class="value">80%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                      </li>
+                       <li>
+                        <div class="skill-wrapper">
+                          <span class="span">HTML</span>
+                          <span class="value">80%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                      </li>
+                       <li>
+                        <div class="skill-wrapper">
+                          <span class="span">CSS</span>
+                          <span class="value">80%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                      </li>
+                       <li>
+                        <div class="skill-wrapper">
+                          <span class="span">JavaScript</span>
+                          <span class="value">80%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                      </li>
+
+
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">Data Science</span>
+                          <span class="value">85%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">Python</span>
+                          <span class="value">75%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">DBMS</span>
+                          <span class="value">70%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">Gen AI</span>
+                          <span class="value">70%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">Git and GiTHub</span>
+                          <span class="value">90%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                 
+                    <img
+                      src="./assets/images/skills.svg"
+                      alt=""
+                      width="100px"
+                      height="420"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+                 
+                </div>
+              </div>
+              <!-- SKILL AREA -->
+
+              <!-- INTERVIEW AREA -->
+              <div class="tab-content" data-tab-content="interview" style="display: none;">
+                <h1 class="h2 title">Education</h1>
+                <!-- <figure
+                  class="skill-banner img-holder"
+                  style="--width: 570; --height: 420"
+                  data-tilt
+                >
+                  <img
+                    src="./assets/images/Education.svg"
+                    alt=""
+              
+                    loading="lazy"
+                    class="img-cover"
+                  />
+                </figure> -->
+                <ul>
+                  <li>
+                    <div class="skill-wrapper">
+                      <span class="span"
+                        >HSC <br />
+                        2020</span
+                      >
+                      <span class="value">92.66 %</span>
+                    </div>
+
+                    <div class="progress-bar">
+                      <div class="progress-fill" style="width: 92.6%"></div>
+                    </div>
+                  </li>
+
+                  <!-- <li>
+                    <div class="skill-wrapper">
+                      <span class="span"
+                        >HSC <br />
+                        2022
+                      </span>
+                      <span class="value">78.5%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                      <div class="progress-fill" style="width: 78.5%"></div>
+                    </div>
+                  </li> -->
+
+                  <li>
+                    <div class="skill-wrapper">
+                      <span class="span"
+                        >B.Sc. Computer Science <br />With Cognitive System
+                        <br />2026</span
+                      >
+                      <span class="value">88%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                      <div class="progress-fill" style="width: 88%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- INTERVIEW AREA -->
+
+              <!-- AWARD AREA -->
+              <div class="tab-content" data-tab-content="Award" style="display: none;">
+                <h3 class="h4 title section-title">
+                  We’re a team of creatives passionate about AI and Data Science innovations.
+Through Alyert, we help tech companies solve real-world problems with intelligent solutions
+                </h3>
+                <ul class="grid-list">
+                  <li>
+                    <div class="award-card">
+                      <figure
+                        class="card-banner img-holder"
+                        data-tilt
+                        style="--width: 534; --height: 383"
+                      >
+                        <img
+                          src="./assets/images/cer.jpeg"
+                          width="534"
+                          height="383"
+                          loading="lazy"
+                          alt="caertificate"
+                          class="img-cover"
+                        />
+                      </figure>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="award-card">
+                      <figure
+                        class="card-banner img-holder"
+                        data-tilt
+                        style="--width: 534; --height: 383"
+                      >
+                        <img
+                          src="./assets/images/cer1.jpeg"
+                          width="534"
+                          height="383"
+                          loading="lazy"
+                          alt="caertificate"
+                          class="img-cover"
+                        />
+                      </figure>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="award-card">
+                      <figure
+                        class="card-banner img-holder"
+                        data-tilt
+                        style="--width: 534; --height: 383"
+                      >
+                        <img
+                          src="./assets/images/cer3.jpeg"
+                          width="534"
+                          height="383"
+                          loading="lazy"
+                          alt="caertificate"
+                          class="img-cover"
+                        />
+                      </figure>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="award-card">
+                      <figure
+                        class="card-banner img-holder"
+                        data-tilt
+                        style="--width: 534; --height: 383"
+                      >
+                        <img
+                          src="./assets/images/cer4.jpeg"
+                          width="534"
+                          height="383"
+                          loading="lazy"
+                          alt="caertificate"
+                          class="img-cover"
+                        />
+                      </figure>
+                    </div>
+                  </li>
+                   <li>
+                    <div class="award-card">
+                      <figure
+                        class="card-banner img-holder"
+                        data-tilt
+                        style="--width: 534; --height: 383"
+                      >
+                        <img
+                          src="./assets/images/cer4.png"
+                          width="534"
+                          height="383"
+                          loading="lazy"
+                          alt="caertificate"
+                          class="img-cover"
+                        />
+                      </figure>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- AWARD AREA -->
+
+              <!-- EXHIBITION AREA -->
+              <div class="tab-content" data-tab-content="Exhibition" style="display: none;">
+                <ul class="grid-list">
+                  <li>
+                    <div class="exhibition-card">
+                      <figure
+                        style="--width: 376; --height: 200"
+                        class="card-banner img-holder"
+                        data-tilt
+                      >
+                        <img
+                          src="./img/photography.jpg"
+                          width="376"
+                          height="200"
+                          alt="image"
+                          class="img-cover"
+                          loading="lazy"
+                        />
+                      </figure>
+                      <div class="card-icon">
+                        <ion-icon
+                          name="image-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="exhibition-card">
+                      <figure
+                        style="--width: 376; --height: 200"
+                        class="card-banner img-holder"
+                        data-tilt
+                      >
+                        <img
+                          src="./img/travelling.jpg"
+                          width="376"
+                          height="200"
+                          alt="image"
+                          class="img-cover"
+                          loading="lazy"
+                        />
+                      </figure>
+                      <div class="card-icon">
+                        <ion-icon
+                          name="image-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- EXHIBITION AREA -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+
+        <!-- CTA -->
+
+       <section class="section cta fade-in" aria-label="Work With Me">
+  <div class="container text-center">
+    <h2 class="title h2 section-title text-center" id="loop-text"></h2>
+
+    <a href="#Contact" class="btn cta-btn">
+      <span class="span">Hire Me Now</span>
+      <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+    </a>
+  </div>
+
+</section>
+
+
+        <!-- CTA -->
+
+        <!-- PROJECT -->
+        <section
+          class="section project"
+          id="Project"
+          aria-label="my latest project"
+        >
+          <ul class="slider-list">
+            <li class="slider-item">
+              <div class="project-card text-center">
+                <div
+                  class="card-banner img-holder has-before"
+                  style="--width: 1000; --height: 763"
+                >
+                  <img
+                    src="./assets/images/1.png"
+                    width="1000"
+                    height="763"
+                    loading="lazy"
+                    alt="Project poster: Creative & experienced digital design studio"
+                    class="img-cover"
+                  />
+                  <a
+                    href="https://hybridrecommendation.streamlit.app/"
+                    class="btn btn:hover"
+                  >
+                    <span class="span">Project details</span>
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Hybrid Recommendation</p>
+                  <h3 class="title h3">
+                    <a href="https://github.com/28-tharunigaa/Hybrid-Recommendation-System-using-Streamlit" class="card-title"
+                      >Hybrid Recommendation System using Streamlit</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="project-card text-center">
+                <div
+                  class="card-banner img-holder has-before"
+                  style="--width: 1000; --height: 763"
+                >
+                  <img
+                    src="./assets/images/2.png"
+                    width="1000"
+                    height="763"
+                    loading="lazy"
+                    alt="Project poster: Creative & experienced digital design studio"
+                    class="img-cover"
+                  />
+                  <a
+                    href=""
+                    class="btn btn:hover"
+                  >
+                    <span class="span">Project details</span>
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Live sports score tracking</p>
+                  <h3 class="title h3">
+                    <a href="" class="card-title"
+                      >Live sports score tracking application Mern</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+           
+            <li class="slider-item">
+              <div class="project-card text-center">
+                <div
+                  class="card-banner img-holder has-before"
+                  style="--width: 1000; --height: 763"
+                >
+                  <img
+                    src="./assets/images/3.png"
+                    width="1000"
+                    height="763"
+                    loading="lazy"
+                    alt="Project poster: Creative & experienced digital design studio"
+                    class="img-cover"
+                  />
+                  <a
+                    href="https://github.com/28-tharunigaa/AI-Image-captioning"
+                    class="btn btn:hover"
+                  >
+                    <span class="span">Project details</span>
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle">AI Image Captioning</p>
+                  <h3 class="title h3">
+                    <a href="https://github.com/28-tharunigaa/AI-Image-captioning" class="card-title"
+                      >AI Image Captioning is a technology</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+           
+          
+           
+      
+          </ul>
+        </section>
+        <!-- PROJECT -->
+
+        <!-- TESTIMONALS -->
+        <section
+  class="section testi"
+  aria-label="what our client says"
+  id="Review"
+>
+  <div class="container">
+    <div class="testi-content">
+      <blockquote class="animated-quote">
+        <marquee behavior="scroll" direction="left" scrollamount="8">
+            &ldquo; 🍕 Eat | 🛌 Sleep |  💻 code | 🔁 repeat | &rdquo;
+        </marquee>
+      </blockquote>
+      <!-- <div class="profile-card">
+        <figure
+          class="card-banner card-holder"
+          style="--width: 70; --height: 70"
+        >
+          <img
+            src="./img/Apple Memoji.jpg"
+            width="70"
+            height="70"
+            loading="lazy"
+            alt="Tilak"
+            class="img-cover"
+          />
+        </figure>
+        <div> -->
+          <!-- <p class="title h5 card-title">Client</p> -->
+          <!-- <p class="card-subtitle">Tilak</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        <!-- TESTIMONALS -->
+
+        <!-- CONTACT -->
+     <section class="section contact" aria-label="contact me" id="Contact">
+  <div class="container">
+    <h2 class="title h2 section-title">Get In Touch</h2>
+
+    <div class="contact-content">
+      <!-- ✅ Contact Form Start -->
+<!-- ✅ FORM SECTION -->
+<form class="contact-form" id="myForm" >
+  <input
+    type="text"
+    name="name"
+    placeholder="Full Name"
+    class="input-field"
+    required
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    class="input-field"
+    required
+  />
+  <input
+    type="tel"
+    name="phone"
+    placeholder="Phone"
+    class="input-field"
+    pattern="[0-9]{10}" 
+    title="Enter a 10-digit number"
+    required
+  />
+  <textarea
+    name="message"
+    placeholder="Enter your message"
+    class="input-field"
+    rows="5"
+    required
+  ></textarea>
+
+  <button type="submit" class="btn btn:hover" id="submitBtn">
+    <span class="span">Send Email</span>
+    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+  </button>
+
+  <p
+    id="form-message"
+    class="form-success-message"
+    style="display: none; color: rgb(7, 7, 7); margin-top: 1rem"
+  >
+    ✅ Your message was sent successfully!
+  </p>
+</form>
+
+
+      <!-- ✅ Tech Image -->
+      <div class="tech-image-container">
+        <img src="./assets/images/Chat bot-amico.png" alt="Robot Technology Abstract" class="tech-image" />
+      </div>
+
+      <!-- ✅ Contact Info List -->
+      <ul class="contact-list">
+        <li class="contact-item">
+          <div class="item-icon">
+            <img src="./assets/images/contact-icon-1.png" loading="lazy" width="50" height="50" alt="Phone" />
+          </div>
+          <div><span class="title h6">+91 99408 05985 </span></div>
+        </li>
+        <li class="contact-item">
+          <div class="item-icon">
+            <img src="./assets/images/contact-icon-2.png" loading="lazy" width="50" height="50" alt="Location" />
+          </div>
+          <div><address class="title h6">Coimbatore, Tamilnadu</address></div>
+        </li>
+        <li class="contact-item">
+          <div class="item-icon">
+            <img src="./assets/images/contact-icon-3.png" loading="lazy" width="50" height="50" alt="Email" />
+          </div>
+          <div><span class="title h6">tharunigatharuniga@gmail.com </span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <!-- CONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="container">
+            <p class="copyright not">Copyright & Design By tharuniga </p>
+            <a href="#top" class="back-top-btn">
+              <span class="span">Back To Top</span>
+              <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </footer>
+        <!-- FOOTER -->
+
+        <!-- CUSTOM CURSOR -->
+        <div class="cursor-dot" data-cursor></div>
+        <div class="cursor-outline" data-cursor></div>
+        <!-- CUSTOM CURSOR -->
+      </article>
+    </main>
+
+    <!-- js link -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- icon links -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Tab switching script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const tabButtons = document.querySelectorAll('[data-tab-btn]');
+        const tabContents = document.querySelectorAll('[data-tab-content]');
+        
+        // Hide all tab contents initially
+        tabContents.forEach(content => {
+          content.style.display = 'none';
+        });
+        
+        // Remove active class from all buttons initially
+        tabButtons.forEach(button => {
+          button.classList.remove('active');
+        });
+        
+        // Function to show a specific tab
+        function showTab(tabId) {
+          // Hide all tab contents
+          tabContents.forEach(content => {
+            content.style.display = 'none';
+          });
+          
+          // Remove active class from all buttons
+          tabButtons.forEach(button => {
+            button.classList.remove('active');
+          });
+          
+          // Show selected tab content
+          const selectedContent = document.querySelector(`[data-tab-content="${tabId}"]`);
+          if (selectedContent) {
+            selectedContent.style.display = 'block';
+          }
+          
+          // Add active class to selected button
+          const selectedButton = document.querySelector(`[data-tab-btn="${tabId}"]`);
+          if (selectedButton) {
+            selectedButton.classList.add('active');
+          }
+        }
+        
+        // Add click event listeners to all tab buttons
+        tabButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const tabId = button.getAttribute('data-tab-btn');
+            showTab(tabId);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

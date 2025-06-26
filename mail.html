@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Send Email</title>
+    <!-- ✅ Correct EmailJS v3 SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("GiKKeuioNd0XGI7-c"); // ✅ Your PUBLIC key
+      })();
+
+      function sendEmail() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var message = document.getElementById("message").value;
+
+        emailjs.send("service_wp0m4t2", "template_i7sb8sg", {
+          name: name,
+          email: email,
+          phone: phone,
+          message: message
+        })
+        .then(function (response) {
+          alert("✅ Message sent successfully!");
+        }, function (error) {
+          alert("❌ Failed to send message: " + JSON.stringify(error));
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Contact Form</h2>
+    <label>Name: <input type="text" id="name" /></label><br /><br />
+    <label>Email: <input type="email" id="email" /></label><br /><br />
+    <label>Phone: <input type="text" id="phone" /></label><br /><br />
+    <label>Message:<br /><textarea id="message" rows="5" cols="40"></textarea></label><br /><br />
+    <button onclick="sendEmail()">Send</button>
+  </body>
+</html>
